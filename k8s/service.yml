@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: qqdert
+  name: nnmgte
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "qqdert"
+  - name: "nnmgte"
     port: 8080
   selector:
-    app: qqdert
+    app: nnmgte
