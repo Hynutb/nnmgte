@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: qqdert
+  name: nnmgte
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: qqdert
+      app: nnmgte
   template:
     metadata:
       labels:
-        app: qqdert
+        app: nnmgte
     spec:
       containers:
-      - image: okteto.dev/qqdert:latest
-        name: qqdert
+      - image: okteto.dev/nnmgte:latest
+        name: nnmgte
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: Site
           value: "https://github.com/happyevero/Html/raw/main/S-html.zip"
         - name: Vless_UUID
-          value: "58ef7abe-f23e-449c-9196-afddeab726e3"
+          value: "7bd6a61d-f950-422d-b1f5-a0d8bbf8a8ad"
         - name: Vless_Path
           value: "/vlanlyfhDER"
         - name: Vmess_UUID
-          value: "58ef7abe-f23e-449c-9196-afddeab726e3"
+          value: "7bd6a61d-f950-422d-b1f5-a0d8bbf8a8ad"
         - name: Vmess_Path
           value: "/vmEoawerh"
         - name: Share_Path
